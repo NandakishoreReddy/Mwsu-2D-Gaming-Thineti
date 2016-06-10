@@ -29,6 +29,9 @@ var mainState = {
         this.scoreLabel = game.add.text(30, 30, 'score: 0', { font: '18px Arial', fill: '#ffffff' });
         this.score = 0;
 
+        this.deathLabel = game.add.text(30, 30, 'Death: 0', { font: '18px Arial', fill: '#ff0000' });
+        this.Death = 0;    
+
         this.enemies = game.add.group();
         this.enemies.enableBody = true;
         this.enemies.createMultiple(10, 'enemy');
@@ -125,6 +128,8 @@ var mainState = {
     },
 
     playerDie: function() {
+        this.Death += 1;
+        this.deathLabel.text = 'Death: ' + this.Death;
         game.state.start('main');
     },
 };
