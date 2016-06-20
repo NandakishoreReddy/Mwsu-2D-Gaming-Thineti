@@ -25,9 +25,9 @@ SpaceHipster.Preload.prototype = {
 	  this.load.audio('asteriodexplosion', 'assets/audio/asteriod_explosion.ogg');
 	  this.load.audio('fire', 'assets/audio/fire.ogg');
 	  this.load.image('bullet', 'assets/images/bullet.png')
-    this.load.image('easy', 'assets/images/easy.png');
-    this.load.image('medium', 'assets/images/medium.png');
-    this.load.image('hard', 'assets/images/hard.png');
+    this.load.image('easy', 'assets/images/easy.PNG');
+    this.load.image('medium', 'assets/images/medium.PNG');
+    this.load.image('hard', 'assets/images/hard.PNG');
   },
   create: function() {
   	this.state.start('MainMenu');
